@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ title or metadata.title }}</title>
+		<meta name="description" content="{{ description or metadata.description }}">
+
+		{#- Atom and JSON feeds included by default #}
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
+
+		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
+		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
+
+{#-
+		Choices for CSS:
+
+		1. External files (best with local dev server live reload)
+
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="stylesheet" href="/css/message-box.css">
+		<link rel="stylesheet" href="/css/prism-okaidia.css">
+		<link rel="stylesheet" href="/css/prism-diff.css">
+
+		2. Inlined (fastest site performance in production)
+#}
+		<style>
+		{% include "public/css/index.css" %}
+		{% include "public/css/message-box.css" %}
+		{% include "node_modules/prismjs/themes/prism-okaidia.css" %}
+		{% include "public/css/prism-diff.css" %}
+		</style>
+{#
+		3. You could even swap between the two methods above using {% if eleventy.env.runMode === "serve" %}
+		4. Concatenate CSS to one file (site performance is slower than 2 but faster than 1):
+				https://www.11ty.dev/docs/quicktips/concatenate/
+		5. Use a bundler
+				e.g. Vite https://www.11ty.dev/docs/server-vite/
+				Or search for additional community plugins for esbuild, rollup, webpack, etc.
+#}
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">{{ metadata.title }}</a>
+
+			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+				{%- for entry in collections.all | eleventyNavigation %}
+					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+				{%- endfor %}
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			{{ content | safe }}
+		</main>
+
+		<footer></footer>
+
+		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
+	</body>
+</html>
