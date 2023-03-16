@@ -1,6 +1,6 @@
 module.exports = {
-	"title": "Eleventy Base Blog v8",
-	"url": "https://example.com/",
+	"title": "Cemal Okten",
+	"url": "https://cem.al",
 	"language": "en",
 	"description": "I am writing about my experiences as a naval navel-gazer.",
 	"author": {

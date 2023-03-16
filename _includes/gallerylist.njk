@@ -1,0 +1,31 @@
+<section class="image-column-container">
+	<div class="image-column">
+		{% for image in collections.col1 %}
+			<figure>
+				{{ image.templateContent | safe }}
+				<div class="image-caption">⤻ {{image.data.title}} - <a href={{image.data.link}}>Github</a>
+				</div>
+			</figure>
+		{% endfor %}
+	</div>
+
+	<div class="image-column">
+		{% for image in collections.col2 %}
+			<figure>
+				{{ image.templateContent | safe }}
+				<div class="image-caption">⤻ {{image.data.title}} - <a href={{image.data.link}}>Github</a>
+				</div>
+			</figure>
+		{% endfor %}
+	</div>
+
+	<div class="image-column">
+		{% for image in collections.col3 %}
+			<figure>
+				{{ image.templateContent | safe }}
+				<div class="image-caption">⤻ {{image.data.title}} - <a href={{image.data.link}}>Github</a>
+				</div>
+			</figure>
+		{% endfor %}
+	</div>
+</section>
