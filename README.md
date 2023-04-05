@@ -15,13 +15,13 @@ To set up the blog locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/yourreponame.git
+git clone https://github.com/cemalokten/blog 
 ```
 
 2. Change to the project directory:
 
 ```bash
-cd yourreponame
+cd blog
 ```
 
 3. Install the required dependencies:
