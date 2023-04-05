@@ -1,6 +1,5 @@
 {% for post in postslist | reverse %}
 	<section class="postlist-section">
-
 		<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
 			<a class="home-link" href="{{ post.url }}" class="postlist-link">
 				{% if post.data.title %}{{ post.data.title }}
@@ -8,11 +7,7 @@
 					<code>{{ post.url }}</code>
 				{% endif %}
 			</a>
-
-
-				<time class="home-link" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
-
-
+			<time class="home-link" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
 		</li>
 	</section>
 {% endfor %}

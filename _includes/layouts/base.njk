@@ -6,17 +6,12 @@
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 		<script defer src="/js/screensaver.js"></script>
-		{#- Atom and JSON feeds included by default #}
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
-		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
-
 		<style>
 			{% include "public/css/index.css" %}
 			{% include "public/css/message-box.css" %}
 			{% include "node_modules/prismjs/themes/prism-okaidia.css" %}
 			{% include "public/css/prism-diff.css" %}
 		</style>
-
 	</head>
 	<body>
 		<header>
@@ -25,7 +20,6 @@
 			{% else %}
 				<a href="/" class="home-link">Home</a>
 			{% endif %}
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
 				<ul class="nav">
 					{%- for entry in collections.all | eleventyNavigation %}
@@ -36,13 +30,9 @@
 				</ul>
 			</nav>
 		</header>
-
 		<main id="skip">
 			{{ content | safe }}
 		</main>
-
-		<footer></footer>
-
 		<div class="screensaver--container">
 			<span class="screensaver--clock">12:00PM</span>
 		</div>
