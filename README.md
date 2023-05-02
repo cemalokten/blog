@@ -2,6 +2,8 @@
 
 This is my personal blog hosted at [cem.al](https://cem.al). It serves as a platform for showcasing my recent coding projects and writing blog posts about things that interest me or I have learned. The main purpose of this blog is to help me teach myself new skills and concepts. The blog is built using the [Eleventy](https://www.11ty.dev/) static site generator.
 
+![Screenshot 2023-05-02 at 12 33 43](https://user-images.githubusercontent.com/60609268/235654920-53467f27-02e8-4470-91b4-3b7de719957d.png)
+
 ## Features
 
 - Coding projects showcase
@@ -37,3 +39,4 @@ npx @11ty/eleventy --watch --serve
 ```
 
 This will start a local development server, and you can view the blog by opening your browser and navigating to http://localhost:8080.
+![Screenshot 2023-05-02 at 12 33 40](https://user-images.githubusercontent.com/60609268/235654948-508f5320-d7af-468a-8034-26b6dd34e6bf.png)
