@@ -1,14 +1,14 @@
 const screensaverContainer = document.querySelector(".screensaver--container");
 const screensaverClock = document.querySelector(".screensaver--clock");
 const main = document.getElementsByTagName("main");
-const header = document.getElementsByTagName("header");
+// const header = document.getElementsByTagName("header");
 const pageTitle = document.querySelector("title");
 
 const showScreensaver = function () {
 	screensaverContainer.style.opacity = 1;
 	screensaverContainer.style.visibility = "visible";
 	main[0].classList.add("blur");
-	header[0].classList.add("blur");
+	// header[0].classList.add("blur");
 };
 
 const hideScreensaver = function () {
@@ -53,7 +53,7 @@ function checkIfIdle() {
 function resetIdleTime() {
 	idleTime = 0;
 	hideScreensaver();
-	header[0].classList.remove("blur");
+	// header[0].classList.remove("blur");
 	main[0].classList.remove("blur");
 	pageTitle.textContent = `Cemal Okten`;
 }
