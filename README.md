@@ -4,7 +4,7 @@ This is my personal blog hosted at [cem.al](https://cem.al). It serves as a plat
 
 ## Features
 
-- Coding projects showcase
+- Coding projects showcases
 - Blog posts on various topics
 - Theme: Heavily modified version of [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog)
 
