@@ -1,4 +1,6 @@
 Cemal Okten *(Je-mal)* is a developer based in London.
 
-He can be reached via [Email](mailto:cemalokten@gmail.com), [Twitter](https://twitter.com/cemalokten) or [GitHub](https://github.com/cemalokten).
+He can be contacted via [Email](mailto:cemalokten@gmail.com).
+
+A more detailed list of his projects can be found on [GitHub](https://github.com/cemalokten).
 
