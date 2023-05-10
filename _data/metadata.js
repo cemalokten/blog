@@ -2,10 +2,10 @@ module.exports = {
 	"title": "Cemal Okten",
 	"url": "https://cem.al",
 	"language": "en",
-	"description": "I am writing about my experiences as a naval navel-gazer.",
+	"description": "Developer based in London",
 	"author": {
-		"name": "Your Name Here",
-		"email": "youremailaddress@example.com",
-		"url": "https://example.com/about-me/"
+		"name": "Cemal Okten	",
+		"email": "mail@cem.al",
+		"url": "https://cem.al"
 	}
 }
