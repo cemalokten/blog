@@ -325,15 +325,11 @@ header {
 @media (max-width: 991px) {
 	.image-column-container {
 		grid-template-columns: 1fr 1fr;
+		padding-top: 1em;
 	}
 
 	.image-column {
 		padding-top: 0em;
-		width: 100%;
-	}
-
-	.image-column:first-child {
-		padding-top: 1em;
 		width: 100%;
 	}
 
@@ -355,6 +351,12 @@ header {
 		margin-top: 0.2em;
 		margin-bottom: 2em;
 	}
+
+	.image-column:first-child {
+		padding-top: 1em;
+		width: 100%;
+	}
+
 }
 
 
