@@ -59,6 +59,16 @@ body {
 	letter-spacing: 0.02em;
 }
 
+/* Mobile: Half font size */
+@media (max-width: 767px) {
+
+	html,
+	body {
+		font-size: 1.2em;
+		/* 50% of 1.4em */
+	}
+}
+
 html {
 	overflow-y: scroll;
 }
@@ -310,6 +320,43 @@ header {
 	font-size: 0.5em;
 	margin-bottom: 1em;
 }
+
+/* Tablet: 2 columns */
+@media (max-width: 991px) {
+	.image-column-container {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.image-column {
+		padding-top: 0em;
+		width: 100%;
+	}
+
+	.image-column:first-child {
+		padding-top: 1em;
+		width: 100%;
+	}
+
+	.image-caption {
+		font-size: 0.5em;
+		margin-bottom: 2em;
+	}
+}
+
+/* Mobile: 1 column */
+@media (max-width: 767px) {
+	.image-column-container {
+		grid-template-columns: 1fr;
+
+	}
+
+	.image-caption {
+		font-size: 0.7em;
+		margin-top: 0.2em;
+		margin-bottom: 2em;
+	}
+}
+
 
 /* Direct Links / Markdown Headers */
 .header-anchor {
