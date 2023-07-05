@@ -1,7 +1,7 @@
 ---
 title: Keyboard glockenspeil
 link: https://github.com/cemalokten/keyboard-glockenspiel
-linkLabel: GitHub
+linkLabel: Github
 tag: image
 date: 2017-01-01
 ---
