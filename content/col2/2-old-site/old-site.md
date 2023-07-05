@@ -1,6 +1,7 @@
 ---
 title: Version of porfolio built in Typescript
 link: https://github.com/cemalokten/blog
+linkLabel: Github
 tag: image
 ---
 

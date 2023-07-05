@@ -1,6 +1,7 @@
 ---
 title: Sweater CLI written in GO
 link: https://github.com/cemalokten/sweater
+linkLabel: Github
 tag: image
 ---
 

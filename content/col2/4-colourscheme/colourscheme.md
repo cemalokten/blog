@@ -1,6 +1,7 @@
 ---
 title: Colour-scheme generator
 link: https://github.com/cemalokten/mobile-colour-scheme-generator
+linkLabel: Github
 tag: image
 ---
 
