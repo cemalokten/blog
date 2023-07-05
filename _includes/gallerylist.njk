@@ -3,7 +3,7 @@
 		{% for image in collections.col1 %}
 			<figure>
 				{{ image.templateContent | safe }}
-				<div class="image-caption">⤻ {{image.data.title}} - <a href={{image.data.link}}>Github</a>
+				<div class="image-caption">⤻ {{image.data.title}} - <a href={{image.data.link}}>{{image.data.linkLabel}}</a>
 				</div>
 			</figure>
 		{% endfor %}
@@ -13,7 +13,7 @@
 		{% for image in collections.col2 %}
 			<figure>
 				{{ image.templateContent | safe }}
-				<div class="image-caption">⤻ {{image.data.title}} - <a href={{image.data.link}}>Github</a>
+				<div class="image-caption">⤻ {{image.data.title}} - <a href={{image.data.link}}>{{image.data.linkLabel}}</a>
 				</div>
 			</figure>
 		{% endfor %}
@@ -23,7 +23,7 @@
 		{% for image in collections.col3 %}
 			<figure>
 				{{ image.templateContent | safe }}
-				<div class="image-caption">⤻ {{image.data.title}} - <a href={{image.data.link}}>Github</a>
+				<div class="image-caption">⤻ {{image.data.title}} - <a href={{image.data.link}}>{{image.data.linkLabel}}</a>
 				</div>
 			</figure>
 		{% endfor %}
