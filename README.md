@@ -13,6 +13,8 @@ The blog is built using the [Eleventy](https://www.11ty.dev/) static site genera
 - Coding projects showcase
 - Blog posts on various topics
 - Theme: Heavily modified version of [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog)
+- Blazingly fast - check those scores 🫠
+![Screenshot 2023-07-05 at 13 45 17](https://github.com/cemalokten/blog/assets/60609268/b9c5bd70-5ae6-4065-a7ab-22920b256e18)
 
 ## Installation and Setup
 
