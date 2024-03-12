@@ -428,11 +428,11 @@ h2 + .header-anchor {
   position: absolute;
   z-index: 17;
 
-  font-size: 14vw;
+  font-size: 10vw;
   font-weight: 600;
   text-align: baseline;
   line-height: 20vw;
-  color: var(--tag-red);
+  color: var(--tag-blue);
 
   border: none;
 
