@@ -3,9 +3,9 @@ layout: layouts/base.njk
 ---
 
 <ul class="post-metadata" style="display: flex; flex-direction: row; justify-content: space-between;">
-<li style="display: flex; flex-direction: row; gap: 10px">
+<li class="listStyle">
 <a href="/">← Back</a> 
-/ <H1>{{title}}<H1>
+<span class="hidden">/</span> <H1>{{title}}<H1>
 </li>
 	<li>
 		<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
@@ -15,4 +15,22 @@ layout: layouts/base.njk
 
 {% set postslist = collections.posts %}
 {% include "postslist.njk" %}
+
+<style>
+	.listStyle {
+		display: flex;
+		flex-direction: row; 
+		gap: 10px	
+}
+
+@media (max-width: 767px) {
+.listStyle{ 
+ flex-direction: column; 
+
+.hidden {
+	display: none;
+}
+}
+}
+</style>
 
