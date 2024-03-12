@@ -1,6 +1,13 @@
 /* Defaults */
+@font-face {
+  font-family: "helveticaneue";
+  font-weight: normal;
+  src: url("/public/fonts/helveticaneue.woff2") format("woff2");
+  src: url("/public/fonts/helveticaneue.woff") format("woff");
+}
+
 :root {
-  --font-family: "Helvetica Neue", -apple-system, system-ui, sans-serif;
+  --font-family: "helveticaneue", -apple-system, system-ui, sans-serif;
   --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono,
     Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
@@ -27,25 +34,6 @@
   --syntax-tab-size: 2;
 }
 
-@media (prefers-color-scheme: dark) {
-  /*
-  :root {
-    --color-gray-20: #e0e0e0;
-    --color-gray-50: #c0c0c0;
-    --color-gray-90: #dad8d8;
-
-    --text-color-link: #a6a6f8;
-    --text-color-link-active: mediumslateblue;
-    --text-color-link-visited: #a6a6f8;
-    --background-color: #15202b;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-}
-  */
-
 html,
 body {
   font-family: var(--font-family);
@@ -54,13 +42,12 @@ body {
   background-color: var(--background-color);
   font-size: 22px;
   letter-spacing: 0.02em;
-
 }
 
 html {
   display: flex;
   justify-content: center;
-    margin: 1em;
+  margin: 1em;
 }
 
 body {
@@ -72,8 +59,8 @@ body {
 
 H1,
 H2,
-H3
-{  font-family: var(--font-family);
+H3 {
+  font-family: var(--font-family);
   color: var(--text-color);
   background-color: var(--background-color);
   font-size: 1em;
@@ -85,7 +72,7 @@ H3
   font-weight: 400;
 }
 
-H3{
+H3 {
   font-weight: 400;
   text-decoration: none;
 }
@@ -96,6 +83,10 @@ html {
 }
 
 hr {
+  border: none;
+  height: 1px;
+  color: black;
+  ba
   margin: 2rem 8rem;
 }
 .visually-hidden {
@@ -126,7 +117,6 @@ figure {
   margin: 0;
   padding: 0;
 }
-
 
 a[href] {
   color: var(--text-color-link);

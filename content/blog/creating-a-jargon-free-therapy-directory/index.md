@@ -46,8 +46,6 @@ If you're curious to see how Bobbe is shaping up, feel free to have a look at th
 
 If you have any thoughts, feedback, or just want to chat, don't hesitate to get in touch!
 
----
-
 ## The Joys of Building from Scratch
 
 You might be wondering why I didn't just take the easy route and use a pre-built template. Building Bobbe from scratch has been a great learning opportunity. It has allowed me to give the platform its own unique personality while gaining invaluable experience in UX/UI and front-end development.

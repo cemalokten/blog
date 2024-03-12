@@ -1,8 +1,8 @@
 Hello! I'm Cemal, a web developer based in London.
 
-Currently I'm working on:
+I'm currently working on:
 
-→ Bobbe, a jargon free therapy directory
+- Bobbe, a jargon free therapy directory
 
 Contact me via [Email](mailto:mail@cem.al) or [Twitter](https://twitter.com/cemalokten)
 
