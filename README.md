@@ -1,8 +1,8 @@
 # Blog
 
-This is my personal blog hosted at [cem.al](https://cem.al). 
+This is my personal blog hosted at [cem.al](https://cem.al).
 
-I use it for showcasing my recent coding projects and writing blog posts about things that interest me or I have learned. The main purpose of this blog is to help me learn new skills and concepts. 
+I use it for showcasing my recent coding projects and writing blog posts about things that interest me or I have learned. The main purpose of this blog is to help me learn new skills and concepts.
 
 The blog is built using the [Eleventy](https://www.11ty.dev/) static site generator.
 
@@ -14,7 +14,7 @@ The blog is built using the [Eleventy](https://www.11ty.dev/) static site genera
 - Blog posts on various topics
 - Theme: Heavily modified version of [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog)
 - Blazingly fast - check those scores 🫠
-![Screenshot 2023-07-05 at 13 45 17](https://github.com/cemalokten/blog/assets/60609268/b9c5bd70-5ae6-4065-a7ab-22920b256e18)
+  ![Screenshot 2023-07-05 at 13 45 17](https://github.com/cemalokten/blog/assets/60609268/b9c5bd70-5ae6-4065-a7ab-22920b256e18)
 
 ## Installation and Setup
 
@@ -23,7 +23,7 @@ To set up the blog locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/cemalokten/blog 
+git clone https://github.com/cemalokten/blog
 ```
 
 2. Change to the project directory:

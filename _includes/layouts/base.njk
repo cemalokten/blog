@@ -9,33 +9,13 @@
 		<style>
 			{% include "public/css/index.css" %}
 			{% include "public/css/message-box.css" %}
-			{% include "node_modules/prismjs/themes/prism-okaidia.css" %}
+			{% include "node_modules/prismjs/themes/prism-vs.css" %}
 			{% include "public/css/prism-diff.css" %}
 		</style>
 	</head>
 	<body>
-		<!--
-		TODO: Make sure to uncomment header[0] in screensaver.js
-		<header>
-			{% if (title) %}
-				<a href="/" class="home-link">{{ title }}</a>
-			{% else %}
-				<a href="/" class="home-link">Home</a>
-			{% endif %}
-			<nav>
-				<ul class="nav">
-					{%- for entry in collections.all | eleventyNavigation %}
-						<li class="nav-item">
-							<a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
-						</li>
-					{%- endfor %}
-				</ul>
-			</nav>
-		</header>
-		-->
 		<main id="skip">
 			{{ content | safe }}
-			<div style="text-align: left"><img src="https://pagesize.fly.dev/api/badge/315/darkgreen" alt="Page-size badge" style="height: 25px; width: 134px"/>
 		</main>
 		<div class="screensaver--container">
 			<span class="screensaver--clock">12:00PM</span>

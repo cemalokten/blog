@@ -1,31 +1,95 @@
-<section class="image-column-container">
-	<div class="image-column">
-		{% for image in collections.col1 %}
-			<figure>
-				{{ image.templateContent | safe }}
-				<div class="image-caption">⤻ {{image.data.title}} - <a href={{image.data.link}}>{{image.data.linkLabel}}</a>
-				</div>
-			</figure>
-		{% endfor %}
-	</div>
+<div style="display: flex; flex-direction: flex-row; gap: 8px;margin-top: 2em;"><h2 style="margin-bottom: 0.5rem">Projects</h2>↓</div>
 
-	<div class="image-column">
-		{% for image in collections.col2 %}
-			<figure>
-				{{ image.templateContent | safe }}
-				<div class="image-caption">⤻ {{image.data.title}} - <a href={{image.data.link}}>{{image.data.linkLabel}}</a>
-				</div>
-			</figure>
-		{% endfor %}
-	</div>
-
-	<div class="image-column">
-		{% for image in collections.col3 %}
-			<figure>
-				{{ image.templateContent | safe }}
-				<div class="image-caption">⤻ {{image.data.title}} - <a href={{image.data.link}}>{{image.data.linkLabel}}</a>
-				</div>
-			</figure>
-		{% endfor %}
-	</div>
+<section class="section">
+  <div>
+    {% for project in projectlist | reverse  %}
+    <figure style="border-bottom: 1px solid var(--color-gray-90);">
+      <div class="project-wrapper">
+        <div class="project-wrapper-header">
+          <span class="project-title" data-target="image-div-{{ loop.index }}">{{project.data.title}}</span>
+          <div class="project-link-date">
+            <a href="{{project.data.link}}">{{project.data.linkLabel}}</a>
+            <time class="project-date" datetime="{{ project.data.date | htmlDateString }}">{{ project.data.date | readableDate("LLLL yyyy") }}</time>
+          </div>
+        </div>
+      </div>
+      <div class="image-div" id="image-div-{{ loop.index }}" style="display: none;">
+        <p class="desc-text">{{project.data.description}}</p>
+        {{ project.templateContent | safe }}
+      </div>
+    </figure>
+    {% endfor %}
+  </div>
 </section>
+
+<style>
+  img {
+    margin: 0 0 1rem 0;
+    height: 40vh;
+    width: auto;
+  }
+  
+  .desc-text {
+    max-width: 1024px;
+    margin-bottom: 0.1rem;
+  }
+  
+  .image-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .project-title {
+    cursor: pointer;
+    width: 60%;
+  }
+  
+  .project-wrapper-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+  
+  .project-link-date {
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  @media screen and (max-width: 1000px) {
+  .project-link-date {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .project-title {
+    width: 100%;
+  }
+  .project-wrapper-header {
+    flex-direction: column;
+  }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var projectTitles = document.querySelectorAll('.project-title');
+    
+    projectTitles.forEach(function(title) {
+      title.addEventListener('click', function() {
+        var targetId = this.getAttribute('data-target');
+        var imageDiv = document.getElementById(targetId);
+        
+        if (imageDiv.style.display === 'none') {
+          imageDiv.style.display = 'flex';
+        } else {
+          imageDiv.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

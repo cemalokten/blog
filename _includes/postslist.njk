@@ -1,13 +1,33 @@
+<div style="display: flex; flex-direction: flex-row; gap: 8px;margin-top: 2em;"><h2 style="margin-bottom: 0.5rem">Blog posts</h2>↓</div>
+<section class="section">
 {% for post in postslist | reverse %}
-	<section class="postlist-section">
-		<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-			<a class="home-link" href="{{ post.url }}" class="postlist-link">
+    <figure style="border-bottom: 1px solid var(--color-gray-90);">
+      <div class="project-wrapper">
+			<a  href="{{ post.url }}" >
 				{% if post.data.title %}{{ post.data.title }}
 				{% else %}
 					<code>{{ post.url }}</code>
 				{% endif %}
 			</a>
-			<time class="home-link" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
-		</li>
-	</section>
+			<time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
+			</div>
+		</figure>
 {% endfor %}
+</section>
+<style>
+  @media screen and (max-width: 1000px) {
+  .project-link-date {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .project-title {
+    width: 100%;
+  }
+  .project-wrapper{
+    flex-direction: column;
+		justify-content:start;
+  align-items: start;
+    gap: 1rem;
+  }
+  }
+</style>

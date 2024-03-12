@@ -1,5 +1,9 @@
-Cemal Okten *(je·mal)* is a developer based in London.
+Hello! I'm Cemal, a web developer based in London.
 
-He can be contacted via [Email](mailto:mail@cem.al).
+Currently I'm working on:
 
-A more detailed list of his projects can be found on [Github](https://github.com/cemalokten).
+→ Bobbe, a jargon free therapy directory
+
+Contact me via [Email](mailto:mail@cem.al) or [Twitter](https://twitter.com/cemalokten)
+
+Code for my projects can be found on [Github](https://github.com/cemalokten).

@@ -2,27 +2,17 @@
 layout: layouts/base.njk
 ---
 
-<ul class="post-metadata">
+<ul class="post-metadata" style="display: flex; flex-direction: row; justify-content: space-between;">
+<li style="display: flex; flex-direction: row; gap: 10px">
+<a href="/">← Back</a> 
+/ <H1>{{title}}<H1>
+</li>
 	<li>
 		<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
 	</li>
 </ul>
+
 {{ content | safe }}
 
-{%- if collections.posts %}
-	{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-	{%- set nextPost = collections.posts | getNextCollectionItem %}
-	{%- if nextPost or previousPost %}
-		<ul class="links-nextprev">
-			{%- if previousPost %}
-				<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
-				</li>
-			{% endif %}
-			<br>
-			{%- if nextPost %}
-				<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-				</li>
-			{% endif %}
-		</ul>
-	{%- endif %}
-{%- endif %}
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}
