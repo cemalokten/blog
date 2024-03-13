@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 ---
 
-<ul class="post-metadata" style="display: flex; flex-direction: row; justify-content: space-between;">
+<ul class="post-metadata" style="display: flex; flex-direction: row; justify-content: space-between; ">
 <li class="listStyle">
 <a href="/">← Back</a> 
 <span class="hidden">/</span> <H1>{{title}}<H1>
@@ -20,11 +20,11 @@ layout: layouts/base.njk
 	.listStyle {
 		display: flex;
 		flex-direction: row; 
-		gap: 10px	
-}
+		gap: 10px	;
+	}
 
 @media (max-width: 767px) {
-.listStyle{ 
+ .listStyle{ 
  flex-direction: column; 
 
 .hidden {

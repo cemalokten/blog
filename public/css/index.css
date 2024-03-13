@@ -1,4 +1,4 @@
-/n* Defaults */ @font-face {
+@font-face {
   font-family: "helveticaneue";
   font-weight: normal;
   src: url("/public/fonts/helveticaneue.woff2") format("woff2");
@@ -109,7 +109,7 @@ img {
   width: 100%;
   height: auto;
   border-radius: 0.25em;
-  padding: 1rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 figure {
@@ -478,4 +478,13 @@ main header footer {
 }
 .section {
   border-top: 1px solid var(--color-gray-90);
+}
+
+li {
+  padding-left: 0.25rem;
+}
+
+li::marker {
+  color: #c9c9c9;
+  font-size: 0.85em;
 }

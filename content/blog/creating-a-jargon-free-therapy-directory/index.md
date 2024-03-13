@@ -6,45 +6,40 @@ I'm excited to share a project I've been working on. It's called Bobbe, and it's
 
 It all started when a few friends mentioned their struggles with finding a therapist. After some research I realised that existing directories, while comprehensive, can be overwhelming and complex, especially when you're not feeling great.
 
-From personal experience, the right therapist can change your life. I wanted other people to have that experience.
+From personal experience, the right therapist can change your life. I want other people to have that experience.
 
 So, with some time on my hands from being in-between jobs, I decided to embark on creating a simple, friendly, and jargon-free directory where anyone can find their perfect therapist.
 
-### My aims for Bobbe:
+## Mission:
 
-- Make the search process smooth as possible
-- Create a friendly and inviting environment
-- Cut the big confusing words and keep things straightforward
-- Privacy as a priority for therapy seekers, no cookies, no tracking
-- Focus on essentials rather than overwhelming users with every type of therapy under the sun
-- Generous free trial and referral program for therapists
-- Create a place where trainee therapists can grow their practice
-- Listen to feedback and build the most requested features
+- Intuitive, friendly and accessible interface
+- Focus on essentials rather than overwhelming users
+- Use simple, everyday jargon free language
 
-### Personal goals:
+## Personal goals:
 
-- Level up my coding skills in UI/UX, front-end, back-end, and DevOps
-- Build a project that will help me stand-out to potential employers
+- Level up my coding skills
+- Build a project that will help me stand out to potential employers
 - Create something that might make a difference in someone's life
 
 ## The Journey So Far 🚀
 
 I'm excited to share what I've accomplished so far:
 
-- Designed a warm, friendly interface with pastel colours and abstract shapes
-- Created separate experiences for therapists and therapy seekers, prioritising privacy for therapy seekers
-- Designed for mobile-first but ensured cross-device compatibility
-- Gathered early feedback from friends to refine the user experience
+- Designed a warm, friendly interface
+- Created a intuitive way for users to search and filter
+- Created dashboard for therapists to manage their profile
 
-{% image "./images/bobbe1.png", "Image of terminal modal editor" %}
+{% image "./images/bobbe-landing-page.png", "Bobbe therapy WIP landing page" %}
+{% image "./images/bobbe-search-results.png", "Bobbe therapy WIP landing page" %}
 
 ## What's Next 🔮
 
-Over the next month, I'll be focusing on building out the back end, aiming to launch a working MVP by the end of this month. I'll be sharing my progress, wins, and challenges.
+Over the next month, I'll be focusing on building out the back-end, aiming to launch a working MVP by the end of this month. I'll be sharing my progress, wins, and challenges.
 
-If you're curious to see how Bobbe is shaping up, feel free to have a look at the work-in-progress front end [here](https://bobbe.fly.dev/)! Keep in mind that it's still a work in progress.
+If you're curious to see how Bobbe is shaping up, feel free to have a look at the early work-in-progress front end [here](https://bobbe.fly.dev/)!
 
-If you have any thoughts, feedback, or just want to chat, don't hesitate to get in touch!
+ What do you think? Would you find Bobbe useful, or do you think its a terrible idea? How can I make it better? I'm all ears and would really appreciate your feedback!
 
 ## The Joys of Building from Scratch
 
@@ -52,17 +47,23 @@ You might be wondering why I didn't just take the easy route and use a pre-built
 
 ## Why is it called Bobbe?
 
+<p style="margin-bottom: 0;">
 My dog Bobby has been a great companion over the last few years and got me through some tough times, so Bobbe is named after Bobby. My hope is that Bobbe can be a similar companion to those seeking a therapist.
+</p>
+
+<div style="width:300px; margin-bottom: 0.8rem;">
+{% image "./images/bobby-dog-2.png", "Bobby dog"  %}
+</div>
 
 ## The Tech Stack
 
 - Remix for developer experience, simple design pattern, ability to fetch data directly in the component, and improved SEO
 
 ### Front-end
-- Tailwind CSS combined with CVA for styling (so good!!)
+- Tailwind CSS combined with CVA for styling (so good!)
 - ShadUI for solid accessible components which I customised
 
-### Backend and database
+### Back-end and database
 - Zod for form validation
 - Supabase or Pocketbase to manage DB/Auth (undecided)
 - Faker.js for populating the database with sensible dummy data
