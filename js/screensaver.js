@@ -43,7 +43,7 @@ let idleTime = 0;
 // then show screensaver and change page-title to current time
 function checkIfIdle() {
 	idleTime += 1000;
-	if (idleTime >= 12000) {
+	if (idleTime >= 15000) {
 		showScreensaver();
 		pageTitle.textContent = `${timeNow()}`;
 	}
