@@ -1,5 +1,4 @@
-/* Defaults */
-@font-face {
+/n* Defaults */ @font-face {
   font-family: "helveticaneue";
   font-weight: normal;
   src: url("/public/fonts/helveticaneue.woff2") format("woff2");
@@ -110,7 +109,7 @@ img {
   width: 100%;
   height: auto;
   border-radius: 0.25em;
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
 }
 
 figure {
