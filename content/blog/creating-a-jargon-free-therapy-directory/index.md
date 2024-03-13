@@ -15,7 +15,7 @@ To remove the barriers for people wanting to accesss therapy, by creating a dire
 
 - Has an intuitive, friendly and accessible interface
 - Focuses on essentials rather than overwhelming users
-- Use everyday jargon free language
+- Uses everyday, jargon free language
 
 ## Personal goals:
 
