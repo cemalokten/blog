@@ -5,7 +5,7 @@ date: 2024-06-18
 
 It's been a while since I last shared an update on Bobbe, my project to make finding a therapist simpler. At first, I thought it would be a pretty straightforward problem to solve, but it turns out that creating a site that helps someone make informed decisions about which therapists to talk to is waaay more complex than I imagined. 
 
-## Goals: Making therapy accessible and understanable
+## Goals: Making therapy accessible and understandable
 When I started working on Bobbe, my main goal was to make the process of finding a therapist easier and less confusing for everyone.
 
 I wanted Bobbe to be user-friendly, focusing on what really matters without overwhelming people with too much information. I also wanted to use simple, everyday language that anyone could understand. With this latest update, I believe I've made a lot of progress towards these goals.
